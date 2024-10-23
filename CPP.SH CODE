@@ -1,0 +1,43 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+double smallest (double x, double y, double z);
+double average (double x, double y, double z);
+
+int main(){
+double x;
+double y;
+double z;
+ cout << "Enter three values" << endl;
+ cin >> x >> y >> z;
+ cout << "Smallest value is " << smallest(x, y, z) << endl;
+ cout << "Average is " << average(x, y, z) << endl;
+ 
+
+}
+double smallest (double x, double y, double z){
+    if (z > y && x > y){
+    return y;
+    }
+    else if(x > z && y > z){
+     return z;
+    }
+     else{
+        return x;
+     }
+}
+double average (double x, double y, double z){
+    
+double avg = 0;
+
+avg = (x + y + z) / 3;
+
+return avg;
+
+}
+     
+    
+     
